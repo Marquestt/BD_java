@@ -4,6 +4,10 @@ public class cliente {
     private int id;
     private String nome,cpf;
 
+    public cliente(){
+        
+    }
+
     public cliente(int id, String nome, String cpf) {
         this.id = id;
         this.nome = nome;

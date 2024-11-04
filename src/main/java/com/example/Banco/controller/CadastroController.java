@@ -27,7 +27,7 @@ public class CadastroController {
         return "cadastro";
     }
 
-    @PostMapping
+    @PostMapping("/cadastrar")
     public String cadastrar(Model model,@ModelAttribute cliente cli){
         clienteService cs = context.getBean(clienteService.class);
         cs.Inserir(cli);
