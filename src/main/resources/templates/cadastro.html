@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img>
+    <form th:action="@{/cadastrar}" method="post" th:object="${cliente}">
+        Nome:<input type="text" th:field="*{nome}">
+        CPF:<input type="text" th:field="*{cpf}">
+        <button>Cadastrar</button>
+
+    </form>
+</body>
+</html>
